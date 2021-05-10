@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 import java.util.List;
 
@@ -12,8 +13,13 @@ import java.util.List;
 @Data
 @Builder
 public class CheckoutRequest {
+    @NonNull
     private String uid;
+
+    @NonNull
     private String storeId;
+
+    @NonNull
     private List<CheckoutItem> items;
 
     @Builder.Default
