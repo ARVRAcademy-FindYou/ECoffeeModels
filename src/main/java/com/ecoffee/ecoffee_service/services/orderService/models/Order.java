@@ -50,14 +50,7 @@ public class Order {
 
     private String paymentStatus = "PENDING";
 
-    @Builder.Default
-    private Date createdAt = new Date();
+    private String createdAt;
 
-    @Builder.Default
-    private Date updatedAt = new Date();
-
-    @PrePersist
-    void prePersist() {
-        this.updatedAt = new Date();
-    }
+    private String updatedAt;
 }
