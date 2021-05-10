@@ -10,7 +10,9 @@ import org.mongodb.morphia.annotations.Id;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -30,6 +32,9 @@ public class Account {
     @Builder.Default
     @Embedded
     private List<FavoriteItem> favoriteItems = new ArrayList<>();
+
+    @Builder.Default
+    private Map<String, List<String>> orders = new HashMap<>();
 
     @Builder.Default
     private Date createdAt = new Date();
