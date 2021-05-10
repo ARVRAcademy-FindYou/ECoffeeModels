@@ -4,10 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.mongodb.morphia.annotations.PrePersist;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -37,7 +35,7 @@ public class Order {
     private Long total = 0L;
 
     @Builder.Default
-    private OrderStatus status = OrderStatus.ACTIVE;
+    private String status = "OPEN";
 
     @Builder.Default
     private List<OrderItem> orderItem = new ArrayList<>();
