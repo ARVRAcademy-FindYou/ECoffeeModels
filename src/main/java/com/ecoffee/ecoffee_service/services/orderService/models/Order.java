@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.mongodb.morphia.annotations.Id;
 import org.mongodb.morphia.annotations.PrePersist;
 
 import java.util.ArrayList;
@@ -19,14 +18,20 @@ import java.util.List;
 @Builder
 @Data
 public class Order {
-    @Id
-    private String id;
+    @Builder.Default
+    private String id = "";
+
+    @Builder.Default
+    private String uid = "";
 
     @Builder.Default
     private String storeId = "";
 
     @Builder.Default
-    private String userId = "";
+    private long salesTax = 0L;
+
+    @Builder.Default
+    private long tips = 0L;
 
     @Builder.Default
     private Long total = 0L;
@@ -38,7 +43,7 @@ public class Order {
     private List<OrderItem> orderItem = new ArrayList<>();
 
     @Builder.Default
-    private String note = "N/A";
+    private String note = "";
 
     @Builder.Default
     private String paymentId = "";
