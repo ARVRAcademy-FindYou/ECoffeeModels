@@ -39,7 +39,7 @@ public class Account {
 
     @Builder.Default
     @Embedded
-    private List<CheckoutItem> cart = new ArrayList<>();
+    private List<CheckoutItem> checkoutItems = new ArrayList<>();
 
     @Builder.Default
     private Date createdAt = new Date();
