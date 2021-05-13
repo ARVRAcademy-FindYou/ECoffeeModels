@@ -38,6 +38,7 @@ public class Account {
     private Map<String, List<String>> orders = new HashMap<>();
 
     @Builder.Default
+    @Embedded
     private List<CheckoutItem> cart = new ArrayList<>();
 
     @Builder.Default
