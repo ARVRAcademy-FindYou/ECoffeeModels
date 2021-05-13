@@ -1,7 +1,6 @@
 package com.ecoffee.ecoffee_service.services.accountService.models;
 
-import com.ecoffee.ecoffee_service.services.discoveryService.models.Item;
-import com.ecoffee.ecoffee_service.services.orderService.models.CheckoutItem;
+import com.ecoffee.ecoffee_service.services.orderService.models.OrderItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -43,5 +42,5 @@ public class Account {
 
     @Builder.Default
     @Embedded
-    private List<Item> cart = new ArrayList<>();
+    private List<OrderItem> cart = new ArrayList<>();
 }
