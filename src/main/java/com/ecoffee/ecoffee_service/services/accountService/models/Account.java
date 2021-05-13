@@ -38,9 +38,9 @@ public class Account {
     private Map<String, List<String>> orders = new HashMap<>();
 
     @Builder.Default
-    @Embedded
-    private List<CheckoutItem> cart = new ArrayList<>();
+    private Date createdAt = new Date();
 
     @Builder.Default
-    private Date createdAt = new Date();
+    @Embedded
+    private List<CheckoutItem> cart = new ArrayList<>();
 }
