@@ -14,7 +14,7 @@ import org.mongodb.morphia.annotations.Id;
 @Data
 public class PaymentCard {
 
-    @Id
+    @Builder.Default
     private String id = "";
 
     @Builder.Default
