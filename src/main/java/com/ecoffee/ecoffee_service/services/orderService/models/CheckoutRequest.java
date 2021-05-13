@@ -24,4 +24,9 @@ public class CheckoutRequest {
 
     @Builder.Default
     private String note = "";
+
+    @Builder.Default
+    private PaymentMethod paymentMethod = PaymentMethod.CARD_ON_FILE;
+
+    private String paymentId = "";
 }
