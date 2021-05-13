@@ -1,5 +1,6 @@
 package com.ecoffee.ecoffee_service.services.orderService.models;
 
+import com.ecoffee.ecoffee_service.services.paymentService.model.OrderTax;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,8 +26,7 @@ public class Order {
     @Builder.Default
     private String storeId = "";
 
-    @Builder.Default
-    private long salesTax = 0L;
+    private OrderTax taxes;
 
     @Builder.Default
     private long tips = 0L;
