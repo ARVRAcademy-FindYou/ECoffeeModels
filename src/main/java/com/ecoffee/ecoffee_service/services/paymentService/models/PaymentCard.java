@@ -24,9 +24,9 @@ public class PaymentCard {
     private String last_4 = "";
 
     @Builder.Default
-    private int exp_month = 0;
+    private long exp_month = 0;
 
     @Builder.Default
-    private int exp_year = 0;
+    private long exp_year = 0;
 
 }
