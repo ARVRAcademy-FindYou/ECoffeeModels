@@ -1,5 +1,6 @@
 package com.ecoffee.ecoffee_service.services.accountService.models;
 
+import com.ecoffee.ecoffee_service.services.orderService.models.CheckoutItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
