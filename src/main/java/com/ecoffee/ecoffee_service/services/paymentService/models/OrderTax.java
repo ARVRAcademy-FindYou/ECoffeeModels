@@ -1,4 +1,4 @@
-package com.ecoffee.ecoffee_service.services.paymentService.model;
+package com.ecoffee.ecoffee_service.services.paymentService.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
