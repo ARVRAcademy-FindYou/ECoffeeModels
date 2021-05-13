@@ -1,5 +1,6 @@
 package com.ecoffee.ecoffee_service.services.accountService.models;
 
+import com.ecoffee.ecoffee_service.services.orderService.models.CheckoutItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -38,4 +39,8 @@ public class Account {
 
     @Builder.Default
     private Date createdAt = new Date();
+
+    @Builder.Default
+    @Embedded
+    private List<CheckoutItem> cart = new ArrayList<>();
 }
