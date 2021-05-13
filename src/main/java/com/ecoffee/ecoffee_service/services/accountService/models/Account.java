@@ -37,5 +37,8 @@ public class Account {
     private Map<String, List<String>> orders = new HashMap<>();
 
     @Builder.Default
+    private List<CheckoutItem> cart = new ArrayList<>();
+
+    @Builder.Default
     private Date createdAt = new Date();
 }
