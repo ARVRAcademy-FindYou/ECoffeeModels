@@ -61,6 +61,9 @@ public class Store {
     private List<PushNotification> pushNotifications = new ArrayList<>();
 
     @Builder.Default
+    private String notificationTopicId = "";
+
+    @Builder.Default
     private Date createdAt = new Date();
 
     @Builder.Default
