@@ -43,10 +43,16 @@ public class Store {
     private String ownerId = "";
 
     @Builder.Default
+    private boolean sqOnboarded = false;
+
+    @Builder.Default
     private String sqAccessToken = "";
 
     @Builder.Default
-    private Date sqAccessTokenExpiresAt = null;
+    private String sqRefreshToken = "";
+
+    @Builder.Default
+    private String sqAccessTokenExpiresAt = null;
 
     @Builder.Default
     @Indexed(IndexDirection.GEO2D)

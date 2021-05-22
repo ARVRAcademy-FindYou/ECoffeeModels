@@ -28,7 +28,7 @@ public class Account {
     private String sqCustomerId = "";
 
     @Builder.Default
-    private String username = "Anonymous User";
+    private String username = "User";
 
     @Builder.Default
     @Embedded
@@ -36,6 +36,12 @@ public class Account {
 
     @Builder.Default
     private Map<String, List<String>> orders = new HashMap<>();
+
+    @Builder.Default
+    private List<String> notificationTopicsSubscribed = new ArrayList<>();
+
+    @Builder.Default
+    private String notificationToken = null;
 
     @Builder.Default
     private Date createdAt = new Date();
