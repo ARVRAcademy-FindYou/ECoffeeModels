@@ -38,7 +38,7 @@ public class Account {
     private Map<String, List<String>> orders = new HashMap<>();
 
     @Builder.Default
-    private List<String> notificationTopicsSubscribed = new ArrayList<>();
+    private List<String> topics = new ArrayList<>();
 
     @Builder.Default
     private String notificationToken = null;
