@@ -44,6 +44,9 @@ public class Account {
     private String notificationToken = null;
 
     @Builder.Default
+    private List<String> recurringNotificationIds = new ArrayList<>();
+
+    @Builder.Default
     private Date createdAt = new Date();
 
     @Builder.Default
